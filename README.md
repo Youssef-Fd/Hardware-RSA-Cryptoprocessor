@@ -1,15 +1,8 @@
 # Hardware RSA Cryptoprocessor in VHDL
 
-![Language: VHDL](https://img.shields.io/badge/language-VHDL-blue)
-![Purpose: Educational](https://img.shields.io/badge/purpose-educational-orange)
-![Status: Simulation only](https://img.shields.io/badge/status-simulation%20only-lightgrey)
-
 A VHDL implementation of an RSA cryptographic coprocessor built from synchronous, iterative RTL blocks. A single top-level design covers key generation, modular arithmetic, encryption and decryption.
 
 It is an **educational hardware-design project**: the source and testbench show how a public-key algorithm can be decomposed into RTL modules and coordinated with finite-state machines (FSMs).
-
-> [!WARNING]
-> **Not for protecting real data.** This design uses a predictable LFSR as its random source and textbook RSA with no padding. Its fixed Miller-Rabin witnesses (`{2, 3, 5, 7}`) also do not give a deterministic primality guarantee for arbitrary 512-bit candidates. It is intended for learning and RTL simulation only.
 
 ## Table of contents
 
